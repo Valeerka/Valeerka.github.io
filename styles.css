@@ -1,0 +1,66 @@
+.navbar {
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWZmd2ZqNXlpdzNxeTUxdGwxdDFuYzVzM2YxdWFsdWRvcWpibTQzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MUjvAPddSXm1tdPOTp/giphy.gif');
+    background-size: cover;
+    background-position: 20% 65%;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'TNanti-Demo', sans-serif;
+    font-size: 30px;
+}  
+
+.emoji-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    padding-right: 20px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar ul li a:hover {
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.emoji-link {
+    font-size: 24px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}    
+
+.emoji-link:hover {
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.container {
+    text-align: center;
+}
