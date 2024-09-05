@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     padding: 15px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -14,6 +14,7 @@
     align-items: center;
     font-family: 'TNanti-Demo', sans-serif;
     font-size: 30px;
+    box-shadow: 5px 7px 10px 2px rgba(0, 0, 0, 0.256);
 }  
 
 .emoji-link {
@@ -48,7 +49,7 @@
 }
 
 .navbar ul li a:hover {
-    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .emoji-link {
@@ -63,4 +64,98 @@
 
 .container {
     text-align: center;
+}
+
+.vrij-afbeelding-1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 600px;
+    transform: rotate(-1deg);
+}
+
+.vrij-afbeelding-2 {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    width: 125px;
+    transform: rotate(2deg);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.116);
+}
+
+.container-2 {
+    position: absolute;
+    top: 230px;
+    left: 290px;
+    font-family: 'TNanti-Demo', sans-serif;
+    font-size: 40px;
+    transform: rotate(-1deg);
+}
+
+.vrij-afbeelding-3 {
+    position: absolute;
+    top: 300px;
+    left: 280px;
+    width: 20px;
+    transform: rotate(-2deg);
+}
+
+.vrij-afbeelding-4 {
+    position: absolute;
+    top: 330px;
+    left: 275px;
+    width: 32px;
+    transform: rotate(-2deg);
+}
+
+.vrij-afbeelding-5 {
+    position: absolute;
+    top: 370px;
+    left: 278px;
+    width: 30px;
+    transform: rotate(-2deg);
+}
+
+.vrij-afbeelding-6 {
+    position: absolute;
+    top: 407px;
+    left: 284px;
+    width: 20px;
+    transform: rotate(-2deg);
+}
+
+.container-3 {
+    position: absolute;
+    top: 67px;
+    left: 30px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    transform: rotate(-1deg);
+}
+
+.container-4 {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    transform: rotate(0deg);
+}
+
+.container-5 {
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    transform: rotate(0deg);
+}
+
+.container-6 {
+    position: absolute;
+    top: 37px;
+    left: -2px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    transform: rotate(0deg);
 }
