@@ -1,3 +1,5 @@
+/* -------- nav bar (all) ------------------------------------------- */
+
 .navbar {
     background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWZmd2ZqNXlpdzNxeTUxdGwxdDFuYzVzM2YxdWFsdWRvcWpibTQzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MUjvAPddSXm1tdPOTp/giphy.gif');
     background-size: cover;
@@ -65,6 +67,9 @@
 .container {
     text-align: center;
 }
+
+/* -------- nav bar (all) ------------------------------------------- */
+/* ------------- picogrammen en text voor socials profile ------------- */
 
 .vrij-afbeelding-1 {
     position: absolute;
@@ -159,3 +164,8 @@
     font-size: 15px;
     transform: rotate(0deg);
 }
+
+/* --- picogrammen en text voor socials profile ----------------------- */
+
+/* --- profile photo's ---------------------------------------- */
+
