@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Traits</title>
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/TEST.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+ 
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+
+        .trait {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #ccc; 
+            border-radius: 5px;
+            cursor: pointer;
+            color: gray; 
+            background-color: white; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+        }
+
+        .right {
+            background-color: green;
+            color: white;
+            border-color: green;
+        }
+
+        .wrong {
+            background-color: red;
+            color: white;
+            border-color: red;
+        }
+
+
+        @media(max-width: 768px) {
+            .container {
+                width: 80%;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 480px) {
+            .container {
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        .go-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+
+        <h2>Guess My Traits!</h2>
+
+
+        <div class="container" id="traitsContainer">
+
+            <div class="trait" onclick="checkTrait(this, true)">Creative</div>
+            <div class="trait" onclick="checkTrait(this, false)">Decisiveness</div>
+            <div class="trait" onclick="checkTrait(this, true)">Curious</div>
+            <div class="trait" onclick="checkTrait(this, false)">Patient</div>
+            <div class="trait" onclick="checkTrait(this, true)">Easily Distracted</div>
+            <div class="trait" onclick="checkTrait(this, false)">Mean</div>
+            <div class="trait" onclick="checkTrait(this, true)">Optimistic</div>
+            <div class="trait" onclick="checkTrait(this, true)">Detail Oriented</div>
+            <div class="trait" onclick="checkTrait(this, false)">Organized</div>
+        </div>
+
+
+        <a href="#" class="go-back" onclick="closeTab()">Go Back</a>
+
+        <script>
+            function closeTab() {
+                window.open('','_self').close(); // Sluit de huidige tab
+            }
+        </script>
+        
+    </div>
+
+    <script>
+        function checkTrait(element, isRight) {
+
+            if (isRight) {
+                element.classList.add("right");
+            } else {
+                element.classList.add("wrong");
+            }
+
+   
+            element.style.pointerEvents = "none";
+        }
+    </script>
+
+</body>
+</html>
