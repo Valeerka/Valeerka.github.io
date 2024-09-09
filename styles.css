@@ -68,7 +68,7 @@
 /* -------- Background ------------------------------------------- */
 
 body {
-    background-image: url('images/TEST.png');
+    background-image: url('images/TEST.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +94,7 @@ h1 {
 /* -------- main tekst ------------------------------------------- */
 /* ------------- picogrammen en text voor socials profile ------------- */
 
-.vrij-afbeelding-1 {
+.vrij-afbeelding-1 { /*mijn foto*/
     position: absolute;
     top: 50px;
     left: 20px;
@@ -237,7 +237,7 @@ h1 {
     padding: 15px;
     font-size: 18px;
     text-align: left;
-    background-color: #f1f1f1a4;
+    background-color: #ffffff7b;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
@@ -271,6 +271,61 @@ h1 {
     padding: 15px;
 }
 
+
 /* --- accordion FAQ ------------------------------------------ */
+
+.content-box-1 { /*index content box 1*/
+    background-color: #ffffff7b;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box-2 { /*overview content box*/
+    background-color: #ffffff7b;
+    padding: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+}
+
+
+
+
+
+/* --- index ------------------------------------------ */
+
+.image-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-item-1 {
+    width: 20%;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- index ------------------------------------------ */
+
+
+table {
+    width: 60%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
 
 
