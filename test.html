@@ -42,6 +42,11 @@ table {
 th, td {
   text-align: center;
   padding: 16px;
+  border: 1px solid #ffffff;
+}
+
+th {
+  background-color: #db967a97;
 }
 
 th:first-child, td:first-child {
@@ -69,93 +74,123 @@ tr:nth-child(odd) {
 
 <table>
   <tr>
-    <th style="width:auto">Course designation</th>
+    <th colspan="5">Semester 1</th>
+  </tr>
+  <tr>
+    <th style="width:auto">Course timing</th>
     <th>Course name</th>
-    <th>Course EC amount</th>
     <th>Course project</th>
-    <th>Course timing</th>
+    <th>EC</th>
     <th>Checkbox</th>
   </tr>
   <tr>
-    <td>CU75001</td>
+    <td>Block 1</td>
     <td>Program- & career orientation</td>
-    <td>2.5 EC</td>
-    <td>Portfolio website presentation</td>
-    <td>Block 1</td>
-    <td>👩🏼‍💻</td> 
+    <td>Individual process assessment</td>
+    <td>2,5</td>
+    <td>👩🏼‍💻</td>
   </tr>
   <tr>
-    <td>CU75002</td>
+    <td>Block 1</td>
     <td>Computer science basics</td>
-    <td>5 EC</td>
-    <td>Written knowledge test</td>
-    <td>Block 1</td>
+    <td>Written knowledge tes</td>
+    <td>5EC</td>
     <td>-</td>  
   </tr>
   <tr>
-    <td>CU75003</td>
+    <td>Block 1</td>
     <td>Programming basics</td>
-    <td>5 EC</td>
     <td>Written knowledge test</td>
-    <td>Block 1</td>
-    <td>-</td>  
+    <td>5 EC</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td>CU75068</td>
-    <td>Personal professional develepment: exploration</td>
-    <td>12,5 EC</td>
-    <td>Criterion- refrenced assessment</td>
-    <td>Block 1-4</td>
-    <td>-</td>  
-  </tr>
-  <tr>
-    <td></td>
-    <td>IT personality</td>
-    <td>2,5 EC</td>
-    <td>Portfolio</td>
-    <td>Block 2-4</td>
-    <td></td>  
-  </tr>
-  <tr>
-    <td>CU75004</td>
-    <td>Object oriented programming</td>
-    <td>10 EC</td>
-    <td>Presentation, written knowledge test</td>
     <td>Block 2</td>
-    <td></td>  
+    <td>Object-Oriented programming</td>
+    <td>Presentation written knowledge test</td>
+    <td>10 EC</td>
+    <td>-</td>
   </tr>
   <tr>
-  <td>CU75080</td>
-    <td>Framwork project 1</td>
-    <td>10 EC</td>
-    <td>Written knowledge test, presentation & portfolio</td>
-    <td>Block 3</td>
-    <td></td>  
+    <td rowspan="4">Block 1</td>
+    <td rowspan="4">Framework project 1</td>
+    <td>Written knowledge test</td>
+    <td rowspan="4">10 EC</td>
+    <td rowspan="4">-</td>
+  </tr>
+  <tr>
+    <td>Written knowledge test</td>
+  <tr>
+    <td>Group assignment</td>
   </tr> 
   <tr>
-  <td>CU75011</td>
-    <td>Framework project 2</td>
-    <td>10 EC</td>
-    <td>Presentation portfolio</td>
-    <td>Block 4</td>
-    <td></td>  
-  </tr> 
-    <tr>
-  <td></td>
-    <td></td>
-    <td>-------- +</td>
-    <td></td>
-    <td></td>
-    <td></td>  
+    <td>Individual assignment</td>
+  </tr>
+  <tr>
+    <th colspan="5">Semester 2</th>
   </tr> 
   <tr>
-    <td></td>
-      <td>Total:</td>
-      <td>-</td>
-      <td>Max. obtainable EC amount 60 EC <br> Min. EC required 45 EC</td>
-      <td></td>
-      <td></td>  
-    </tr>    
+    <td rowspan="3">Block 2</td>
+    <td rowspan="3">Framework project 2</td>
+    <td>Portfolio final delivery</td>
+    <td rowspan="3">10 EC</td>
+    <td rowspan="3">-</td>
+  </tr> 
+  <tr>
+    <td>Portfolio - Report of acceptance tests and optional assesments</td>
+  </tr> 
+  <tr>
+    <td>Portfolio - It development</td>
+  </tr>
+  <tr>
+    <td>Block 1 & 2</td>
+    <td>Business IT consultancy basics</td>
+    <td>Individual assignment</td>
+    <td>2,5 EC</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th colspan="5">Semester 1 + 2</th>
+  </tr>
+  <tr>
+    <td>Block 1 & 2</td>
+    <td>Personal professional development exploration</td>
+    <td>Criterian refrenced assesment</td>
+    <td>12,5 EC</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th colspan="5">Project weeks</th>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>IT personality</td>
+    <td>Portfolio 1</td>
+    <td>1,25 EC</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>IT personality</td>
+    <td>Portfolio 2</td>
+    <td>1,25 EC</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Total EC acquired =</th>
+    <th>-</th>
+    <th>-------- +</th>
+    <th></th>
+  </tr>  
+  <tr>
+    <th colspan="5">Max. obtainable EC amount 60 EC
+      Min. EC required 45 EC</th>
+  </tr>
+  
+  <div class="container-7">
+    <a href="guesser.html" target="_blank">Guess my traits!</a> 
+  
 </table> 
 
 </body>
