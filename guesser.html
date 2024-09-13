@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess My Traits</title>
     <style>
-
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -19,13 +20,13 @@
             flex-direction: column;
         }
 
- 
+
         .content-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8); 
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
         }
@@ -51,11 +52,11 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
-            border: 2px solid #ccc; 
+            border: 2px solid #ccc;
             border-radius: 5px;
             cursor: pointer;
-            color: gray; 
-            background-color: white; 
+            color: gray;
+            background-color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
             text-align: center;
         }
@@ -103,24 +104,26 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="content-wrapper">
 
-        <h2>Guess My Traits!</h2>
+        <h2>True or false</h2>
+        <p> Things you can and can't find on my page</p>
 
 
         <div class="container" id="traitsContainer">
 
-            <div class="trait" onclick="checkTrait(this, true)">Creative</div>
-            <div class="trait" onclick="checkTrait(this, false)">Decisiveness</div>
-            <div class="trait" onclick="checkTrait(this, true)">Curious</div>
-            <div class="trait" onclick="checkTrait(this, false)">Patient</div>
-            <div class="trait" onclick="checkTrait(this, true)">Easily Distracted</div>
-            <div class="trait" onclick="checkTrait(this, false)">Mean</div>
-            <div class="trait" onclick="checkTrait(this, true)">Optimistic</div>
-            <div class="trait" onclick="checkTrait(this, true)">Detail Oriented</div>
-            <div class="trait" onclick="checkTrait(this, false)">Organized</div>
+            <div class="trait" onclick="checkTrait(this, true)">One of my dogs name is Gucci</div>
+            <div class="trait" onclick="checkTrait(this, false)">I like going to the gym</div>
+            <div class="trait" onclick="checkTrait(this, true)">My faovrite color is green</div>
+            <div class="trait" onclick="checkTrait(this, false)">I hate the beach</div>
+            <div class="trait" onclick="checkTrait(this, false)">One of my dogs name is Kenzo</div>
+            <div class="trait" onclick="checkTrait(this, true)">I have more as 40+ plushies</div>
+            <div class="trait" onclick="checkTrait(this, false)">My favorite color is purple</div>
+            <div class="trait" onclick="checkTrait(this, true)">My favorite artist in Oliver tree</div>
+            <div class="trait" onclick="checkTrait(this, false)">I've broken my foot over 5 times</div>
         </div>
 
 
@@ -128,10 +131,10 @@
 
         <script>
             function closeTab() {
-                window.open('','_self').close(); // Sluit de huidige tab
+                window.open('', '_self').close();
             }
         </script>
-        
+
     </div>
 
     <script>
@@ -143,10 +146,11 @@
                 element.classList.add("wrong");
             }
 
-   
+
             element.style.pointerEvents = "none";
         }
     </script>
 
 </body>
+
 </html>

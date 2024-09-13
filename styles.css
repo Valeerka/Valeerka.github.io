@@ -1,7 +1,7 @@
-/* -------- nav bar (all) ------------------------------------------- */
+/* -------- v nav bar v ------------------------------------------- */
 
 .navbar {
-    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWZmd2ZqNXlpdzNxeTUxdGwxdDFuYzVzM2YxdWFsdWRvcWpibTQzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MUjvAPddSXm1tdPOTp/giphy.gif');
+    background-image: url('images/pretty.gif');
     background-size: cover;
     background-position: 20% 65%;
     background-repeat: no-repeat;
@@ -16,8 +16,8 @@
     align-items: center;
     font-family: 'TNanti-Demo', sans-serif;
     font-size: 30px;
-    box-shadow: 5px 7px 10px 2px rgba(0, 0, 0, 0.256);
-}  
+    box-shadow: 4px 5px 8px 1px rgba(0, 0, 0, 0.256);
+}
 
 .emoji-link {
     font-size: 24px;
@@ -58,14 +58,28 @@
     font-size: 24px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
-}    
+}
 
 .emoji-link:hover {
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
-/* -------- nav bar (all) ------------------------------------------- */
-/* -------- Background ------------------------------------------- */
+/* -------- ^ nav bar ^ ------------------------------------------- */
+/* -------- v footer v ------------------------------------------- */
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+/* -------- ^ footer ^ ------------------------------------------- */
+/* -------- v Background v ------------------------------------------- */
 
 body {
     background-image: url('images/TEST.gif');
@@ -73,156 +87,257 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
+}
 
-/* -------- Background ------------------------------------------- */
-/* -------- main tekst ------------------------------------------- */
+/* -------- ^ Background ^ ------------------------------------------- */
+/* -------- v main tekst v ------------------------------------------- */
 
 h1 {
     text-align: center;
+    color: rgb(32, 46, 110);
+    font-family: 'LTCushion-Medium', sans-serif;
+}
+
+p {
+    text-align: center;
+    color: rgb(8, 15, 46);
+    font-family: 'LTCushion-Medium', sans-serif;
+}
+
+li {
+    text-align: left;
+    color: rgb(8, 15, 46);
+    font-family: 'LTCushion-Medium', sans-serif;
 }
 
 .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .container div {
     width: 48%;
 }
 
-/* -------- main tekst ------------------------------------------- */
-/* ------------- picogrammen en text voor socials profile ------------- */
+/* -------- ^ main tekst ^ ------------------------------------------- */
+/* ------------- v profile v ------------- */
 
-.vrij-afbeelding-1 { /*mijn foto*/
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 600px;
-    transform: rotate(-1deg);
+.dogs img {
+    width: 200px;
+    height: 200px;
+
 }
 
-.vrij-afbeelding-2 {
-    position: absolute;
-    top: 230px;
-    left: 120px;
-    width: 125px;
-    transform: rotate(2deg);
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.116);
-}
-
-.container-2 {
-    position: absolute;
-    top: 230px;
-    left: 290px;
-    font-family: 'TNanti-Demo', sans-serif;
-    font-size: 40px;
-    transform: rotate(-1deg);
-}
-
-.vrij-afbeelding-3 {
-    position: absolute;
-    top: 300px;
-    left: 280px;
-    width: 20px;
-    transform: rotate(-2deg);
-}
-
-.vrij-afbeelding-4 {
-    position: absolute;
-    top: 330px;
-    left: 275px;
-    width: 32px;
-    transform: rotate(-2deg);
-}
-
-.vrij-afbeelding-5 {
-    position: absolute;
-    top: 370px;
-    left: 278px;
-    width: 30px;
-    transform: rotate(-2deg);
-}
-
-.vrij-afbeelding-6 {
-    position: absolute;
-    top: 407px;
-    left: 284px;
-    width: 20px;
-    transform: rotate(-2deg);
-}
-
-.container-3 {
-    position: absolute;
-    top: 67px;
-    left: 30px;
-    font-family: 'arial', sans-serif;
-    font-size: 15px;
-    transform: rotate(-1deg);
-}
-
-.container-4 {
-    position: absolute;
-    top: 36px;
-    left: 0px;
-    font-family: 'arial', sans-serif;
-    font-size: 15px;
-    transform: rotate(0deg);
-}
-
-.container-5 {
-    position: absolute;
-    top: 37px;
-    left: 0px;
-    font-family: 'arial', sans-serif;
-    font-size: 15px;
-    transform: rotate(0deg);
-}
-
-.container-6 {
-    position: absolute;
-    top: 37px;
-    left: -2px;
-    font-family: 'arial', sans-serif;
-    font-size: 15px;
-    transform: rotate(0deg);
-}
-
-.container-7 {
-    position: relative;
-    top: 110px;
-    left: 100px;
-    font-family: 'TNanti-Demo', sans-serif;
-    font-size: 80px;
+.dogs {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    transform: rotate(2deg);
+    animation: slide 40s linear infinite;
 }
 
-.container-7 a {
-    text-decoration: none;
-    color: inherit;
-    display: inline;
-    white-space: nowrap;
+.dogs-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: -5%;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
 }
 
-/* --- picogrammen en text voor socials profile ----------------------- */
 
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
 
-/* --- profile photo's ---------------------------------------- */
+    100% {
+        transform: translateX(-3800px);
+    }
+}
 
-/* --- accordion FAQ ------------------------------------------ */
+.img-selfie {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-selfie {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box-profile-top {
+    position: relative;
+    background-color: #ffffff7b;
+    padding: 30px;
+    margin: 110px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box-profile-bottom {
+    position: relative;
+    background-color: #ffffff7b;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box-profile-small {
+    position: relative;
+    background-color: #ffffff7b;
+    padding: 30px;
+    margin: 110px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-github {
+    position: absolute;
+    top: 2%;
+    left: 78%;
+}
+
+.img-github {
+    width: 5%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-email {
+    position: absolute;
+    top: 2%;
+    left: 86%;
+}
+
+.img-email {
+    width: 5%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-instagram {
+    position: absolute;
+    top: 2%;
+    left: 94%;
+}
+
+.img-instagram {
+    width: 5%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-content-box-profile-small {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.content-box-profile-small {
+    background-color: #ffffff7b;
+    padding: 30px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-box-profile-small ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.img-oliver {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.img-oliver {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-bsd {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+.img-bsd {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-vira {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+}
+
+.img-vira {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-nascar {
+    position: absolute;
+    top: 30%;
+    left: 54%;
+}
+
+.img-nascar {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- ^ profile ^ ----------------------- */
+
+/* ---  v FAQ v ------------------------------------------ */
 
 .accordion {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -266,15 +381,17 @@ h1 {
     margin: 0;
 }
 
-.accordion-input:checked + .accordion-label + .accordion-content {
-    max-height: 200px;
+.accordion-input:checked+.accordion-label+.accordion-content {
+    max-height: none;
     padding: 15px;
 }
 
 
-/* --- accordion FAQ ------------------------------------------ */
+/* --- ^ FAQ ^ ------------------------------------------ */
 
-.content-box-1 { /*index content box 1*/
+/* --- v index v ------------------------------------------ */
+
+.content-box-index {
     background-color: #ffffff7b;
     padding: 20px;
     margin: 20px auto;
@@ -283,49 +400,126 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.content-box-2 { /*overview content box*/
-    background-color: #ffffff7b;
-    padding: 5px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
-}
-
-
-
-
-
-/* --- index ------------------------------------------ */
-
-.image-row-1 {
+.image-row-index {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
 
-.image-item-1 {
+.image-item-index {
     width: 20%;
     margin: 0 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- index ------------------------------------------ */
+/* --- ^ index ^ ------------------------------------------ */
+/* --- v Blog v ------------------------------------------ */
 
+* {
+    box-sizing: border-box;
+}
 
-table {
-    width: 60%; 
-    margin: 0 auto; 
-    border-collapse: collapse; 
+body-blog {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.44);
+}
+
+.column-blog {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+.fakeimg img {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+.readmore {
+    text-align: right;
+}
+
+.card-blog {
+    background-color: rgba(255, 255, 255, 0.689);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after-blog {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-blog {
+    padding: 20px;
+    text-align: center;
+    background: #b0b0b044;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn-blog,
+    .rightcolumn-blog {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+/* --- ^ Blog ^ ------------------------------------------ */
+/* --- v Blog-articles v ------------------------------------------ */
+
+.content-box-blog {
+    position: relative;
+    background-color: #ffffff7b;
+    padding: 30px;
+    margin: 110px auto;
+    max-width: 800px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-td, th {
+/* --- ^ Blog-articles ^ ------------------------------------------ */
+/* --- v dashboard v ------------------------------------------ */
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+td,
+th {
     padding: 10px;
     text-align: left;
 }
+
+.content-box-2 {
+    background-color: #ffffff7b;
+    padding: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- ^ dashboard ^ ------------------------------------------ */
+
+
 
 
 
